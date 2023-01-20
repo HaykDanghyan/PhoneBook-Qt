@@ -19,4 +19,5 @@ DeleteWindow::~DeleteWindow() {
 void DeleteWindow::on_deletebutton_clicked() {
     int row_number = ui->rowNumber->text().toInt();
     emit row_transfer(row_number);
+    this->close();
 }
